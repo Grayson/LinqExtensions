@@ -7,8 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "TestObject.h"
 #import "NSArray+Linq.h"
+#import "NSEnumerator+Linq.h"
+#import "TestObject.h"
 
 @interface SelectTests : XCTestCase
 @property (nonatomic, strong) NSArray *array;
@@ -37,6 +38,18 @@
 	XCTAssertEqualObjects(@(1), [enumerator nextObject], @"");
 	XCTAssertEqualObjects(@(2), [enumerator nextObject], @"");
 	XCTAssertEqualObjects(@(3), [enumerator nextObject], @"");
+}
+
+- (void)testDeepSelect
+{
+	TestObject *t = [TestObject new];
+	TestObject *deep = [TestObject new];
+	
+	t.content = deep;
+	deep.content = @(1);
+	
+	NSEnumerator *e = @[t].select(^(TestObject *o) { return o.content; }).select(^(TestObject *o) { return o.content; });
+	XCTAssertEqualObjects(@(1), [e nextObject], @"");
 }
 
 @end

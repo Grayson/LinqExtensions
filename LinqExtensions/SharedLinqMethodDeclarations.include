@@ -1,0 +1,4 @@
+- (LinqSelectBlock)select;
+- (LinqWhereBlock)where;
+- (LinqAnyBlock)any;
+- (LinqAllBlock)all;
