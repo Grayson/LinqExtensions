@@ -35,11 +35,13 @@
 - (id)nextObject
 {
 	id nextObject = [self.enumerator nextObject];
-	id evaluatedObject = self.block(nextObject);
-	while (nextObject != nil && evaluatedObject == nil)
+	id evaluatedObject = nil;
+	while (nextObject != nil)
 	{
-		nextObject = [self.enumerator nextObject];
 		evaluatedObject = self.block(nextObject);
+		if (evaluatedObject != nil)
+			break;
+		nextObject = [self.enumerator nextObject];
 	}
 	return evaluatedObject;
 }
