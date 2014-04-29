@@ -1,0 +1,1 @@
+This is just a series of small tests that I tossed together one morning to demonstrate how to hijack the property+block syntax to implement something along the lines of C#'s LINQ.  Please don't pay too much attention as it's just a demonstration of the syntax.

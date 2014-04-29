@@ -10,6 +10,10 @@
 		1D889B29190FE5F200D6B5F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D889B28190FE5F200D6B5F3 /* Foundation.framework */; };
 		1D889B2C190FE5F200D6B5F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B2B190FE5F200D6B5F3 /* main.m */; };
 		1D889B30190FE5F200D6B5F3 /* LinqExtensions.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D889B2F190FE5F200D6B5F3 /* LinqExtensions.1 */; };
+		1D889B38190FE60700D6B5F3 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B37190FE60700D6B5F3 /* TestObject.m */; };
+		1D889B3B190FE62600D6B5F3 /* LinqEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B3A190FE62600D6B5F3 /* LinqEnumerator.m */; };
+		1D889B3D190FE76000D6B5F3 /* LinqFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B3C190FE76000D6B5F3 /* LinqFunctions.m */; };
+		1D889B41190FE7B700D6B5F3 /* NSArray+Linq.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B40190FE7B700D6B5F3 /* NSArray+Linq.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +35,14 @@
 		1D889B2B190FE5F200D6B5F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1D889B2E190FE5F200D6B5F3 /* LinqExtensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LinqExtensions-Prefix.pch"; sourceTree = "<group>"; };
 		1D889B2F190FE5F200D6B5F3 /* LinqExtensions.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LinqExtensions.1; sourceTree = "<group>"; };
+		1D889B36190FE60700D6B5F3 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
+		1D889B37190FE60700D6B5F3 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		1D889B39190FE62600D6B5F3 /* LinqEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinqEnumerator.h; sourceTree = "<group>"; };
+		1D889B3A190FE62600D6B5F3 /* LinqEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinqEnumerator.m; sourceTree = "<group>"; };
+		1D889B3C190FE76000D6B5F3 /* LinqFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinqFunctions.m; sourceTree = "<group>"; };
+		1D889B3E190FE77000D6B5F3 /* LinqFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinqFunctions.h; sourceTree = "<group>"; };
+		1D889B3F190FE7B700D6B5F3 /* NSArray+Linq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Linq.h"; sourceTree = "<group>"; };
+		1D889B40190FE7B700D6B5F3 /* NSArray+Linq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Linq.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,14 @@
 				1D889B2B190FE5F200D6B5F3 /* main.m */,
 				1D889B2F190FE5F200D6B5F3 /* LinqExtensions.1 */,
 				1D889B2D190FE5F200D6B5F3 /* Supporting Files */,
+				1D889B36190FE60700D6B5F3 /* TestObject.h */,
+				1D889B37190FE60700D6B5F3 /* TestObject.m */,
+				1D889B39190FE62600D6B5F3 /* LinqEnumerator.h */,
+				1D889B3A190FE62600D6B5F3 /* LinqEnumerator.m */,
+				1D889B3E190FE77000D6B5F3 /* LinqFunctions.h */,
+				1D889B3C190FE76000D6B5F3 /* LinqFunctions.m */,
+				1D889B3F190FE7B700D6B5F3 /* NSArray+Linq.h */,
+				1D889B40190FE7B700D6B5F3 /* NSArray+Linq.m */,
 			);
 			path = LinqExtensions;
 			sourceTree = "<group>";
@@ -139,6 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D889B3B190FE62600D6B5F3 /* LinqEnumerator.m in Sources */,
+				1D889B41190FE7B700D6B5F3 /* NSArray+Linq.m in Sources */,
+				1D889B3D190FE76000D6B5F3 /* LinqFunctions.m in Sources */,
+				1D889B38190FE60700D6B5F3 /* TestObject.m in Sources */,
 				1D889B2C190FE5F200D6B5F3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
