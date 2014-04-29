@@ -41,7 +41,7 @@
 		nextObject = [self.enumerator nextObject];
 		evaluatedObject = self.block(nextObject);
 	}
-	return nextObject;
+	return evaluatedObject;
 }
 
 @end
