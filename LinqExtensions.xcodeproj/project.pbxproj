@@ -14,7 +14,25 @@
 		1D889B3B190FE62600D6B5F3 /* LinqEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B3A190FE62600D6B5F3 /* LinqEnumerator.m */; };
 		1D889B3D190FE76000D6B5F3 /* LinqFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B3C190FE76000D6B5F3 /* LinqFunctions.m */; };
 		1D889B41190FE7B700D6B5F3 /* NSArray+Linq.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B40190FE7B700D6B5F3 /* NSArray+Linq.m */; };
+		1D889B48190FF93C00D6B5F3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D889B47190FF93C00D6B5F3 /* XCTest.framework */; };
+		1D889B4E190FF93C00D6B5F3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D889B4C190FF93C00D6B5F3 /* InfoPlist.strings */; };
+		1D889B50190FF93C00D6B5F3 /* LinqExtensions_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B4F190FF93C00D6B5F3 /* LinqExtensions_Tests.m */; };
+		1D889B58190FF95A00D6B5F3 /* SelectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B57190FF95A00D6B5F3 /* SelectTests.m */; };
+		1D889B59190FFA6F00D6B5F3 /* NSArray+Linq.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B40190FE7B700D6B5F3 /* NSArray+Linq.m */; };
+		1D889B5A190FFA7200D6B5F3 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B37190FE60700D6B5F3 /* TestObject.m */; };
+		1D889B5B190FFA7700D6B5F3 /* LinqFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B3C190FE76000D6B5F3 /* LinqFunctions.m */; };
+		1D889B5C190FFA7A00D6B5F3 /* LinqEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B3A190FE62600D6B5F3 /* LinqEnumerator.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D889B52190FF93C00D6B5F3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D889B1D190FE5F200D6B5F3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D889B24190FE5F200D6B5F3;
+			remoteInfo = LinqExtensions;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		1D889B23190FE5F200D6B5F3 /* CopyFiles */ = {
@@ -43,6 +61,13 @@
 		1D889B3E190FE77000D6B5F3 /* LinqFunctions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinqFunctions.h; sourceTree = "<group>"; };
 		1D889B3F190FE7B700D6B5F3 /* NSArray+Linq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Linq.h"; sourceTree = "<group>"; };
 		1D889B40190FE7B700D6B5F3 /* NSArray+Linq.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Linq.m"; sourceTree = "<group>"; };
+		1D889B46190FF93C00D6B5F3 /* LinqExtensions Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LinqExtensions Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D889B47190FF93C00D6B5F3 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1D889B4B190FF93C00D6B5F3 /* LinqExtensions Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LinqExtensions Tests-Info.plist"; sourceTree = "<group>"; };
+		1D889B4D190FF93C00D6B5F3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D889B4F190FF93C00D6B5F3 /* LinqExtensions_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinqExtensions_Tests.m; sourceTree = "<group>"; };
+		1D889B51190FF93C00D6B5F3 /* LinqExtensions Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LinqExtensions Tests-Prefix.pch"; sourceTree = "<group>"; };
+		1D889B57190FF95A00D6B5F3 /* SelectTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +79,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1D889B43190FF93C00D6B5F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D889B48190FF93C00D6B5F3 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				1D889B2A190FE5F200D6B5F3 /* LinqExtensions */,
+				1D889B49190FF93C00D6B5F3 /* LinqExtensions Tests */,
 				1D889B27190FE5F200D6B5F3 /* Frameworks */,
 				1D889B26190FE5F200D6B5F3 /* Products */,
 			);
@@ -70,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				1D889B25190FE5F200D6B5F3 /* LinqExtensions */,
+				1D889B46190FF93C00D6B5F3 /* LinqExtensions Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				1D889B28190FE5F200D6B5F3 /* Foundation.framework */,
+				1D889B47190FF93C00D6B5F3 /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -108,6 +144,26 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		1D889B49190FF93C00D6B5F3 /* LinqExtensions Tests */ = {
+			isa = PBXGroup;
+			children = (
+				1D889B4F190FF93C00D6B5F3 /* LinqExtensions_Tests.m */,
+				1D889B4A190FF93C00D6B5F3 /* Supporting Files */,
+				1D889B57190FF95A00D6B5F3 /* SelectTests.m */,
+			);
+			path = "LinqExtensions Tests";
+			sourceTree = "<group>";
+		};
+		1D889B4A190FF93C00D6B5F3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D889B4B190FF93C00D6B5F3 /* LinqExtensions Tests-Info.plist */,
+				1D889B4C190FF93C00D6B5F3 /* InfoPlist.strings */,
+				1D889B51190FF93C00D6B5F3 /* LinqExtensions Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,6 +184,24 @@
 			productReference = 1D889B25190FE5F200D6B5F3 /* LinqExtensions */;
 			productType = "com.apple.product-type.tool";
 		};
+		1D889B45190FF93C00D6B5F3 /* LinqExtensions Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D889B54190FF93C00D6B5F3 /* Build configuration list for PBXNativeTarget "LinqExtensions Tests" */;
+			buildPhases = (
+				1D889B42190FF93C00D6B5F3 /* Sources */,
+				1D889B43190FF93C00D6B5F3 /* Frameworks */,
+				1D889B44190FF93C00D6B5F3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D889B53190FF93C00D6B5F3 /* PBXTargetDependency */,
+			);
+			name = "LinqExtensions Tests";
+			productName = "LinqExtensions Tests";
+			productReference = 1D889B46190FF93C00D6B5F3 /* LinqExtensions Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -136,6 +210,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "From Concentrate Software";
+				TargetAttributes = {
+					1D889B45190FF93C00D6B5F3 = {
+						TestTargetID = 1D889B24190FE5F200D6B5F3;
+					};
+				};
 			};
 			buildConfigurationList = 1D889B20190FE5F200D6B5F3 /* Build configuration list for PBXProject "LinqExtensions" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -150,9 +229,21 @@
 			projectRoot = "";
 			targets = (
 				1D889B24190FE5F200D6B5F3 /* LinqExtensions */,
+				1D889B45190FF93C00D6B5F3 /* LinqExtensions Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D889B44190FF93C00D6B5F3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D889B4E190FF93C00D6B5F3 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1D889B21190FE5F200D6B5F3 /* Sources */ = {
@@ -167,7 +258,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1D889B42190FF93C00D6B5F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D889B50190FF93C00D6B5F3 /* LinqExtensions_Tests.m in Sources */,
+				1D889B5B190FFA7700D6B5F3 /* LinqFunctions.m in Sources */,
+				1D889B59190FFA6F00D6B5F3 /* NSArray+Linq.m in Sources */,
+				1D889B5C190FFA7A00D6B5F3 /* LinqEnumerator.m in Sources */,
+				1D889B5A190FFA7200D6B5F3 /* TestObject.m in Sources */,
+				1D889B58190FF95A00D6B5F3 /* SelectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D889B53190FF93C00D6B5F3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D889B24190FE5F200D6B5F3 /* LinqExtensions */;
+			targetProxy = 1D889B52190FF93C00D6B5F3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1D889B4C190FF93C00D6B5F3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D889B4D190FF93C00D6B5F3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D889B31190FE5F200D6B5F3 /* Debug */ = {
@@ -258,6 +381,40 @@
 			};
 			name = Release;
 		};
+		1D889B55190FF93C00D6B5F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinqExtensions Tests/LinqExtensions Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "LinqExtensions Tests/LinqExtensions Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1D889B56190FF93C00D6B5F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LinqExtensions Tests/LinqExtensions Tests-Prefix.pch";
+				INFOPLIST_FILE = "LinqExtensions Tests/LinqExtensions Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -275,6 +432,14 @@
 			buildConfigurations = (
 				1D889B34190FE5F200D6B5F3 /* Debug */,
 				1D889B35190FE5F200D6B5F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1D889B54190FF93C00D6B5F3 /* Build configuration list for PBXNativeTarget "LinqExtensions Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D889B55190FF93C00D6B5F3 /* Debug */,
+				1D889B56190FF93C00D6B5F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

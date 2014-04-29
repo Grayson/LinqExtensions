@@ -7,9 +7,11 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "TestObject.h"
+#import "NSArray+Linq.h"
 
 @interface SelectTests : XCTestCase
-
+@property (nonatomic, strong) NSArray *array;
 @end
 
 @implementation SelectTests
@@ -17,18 +19,24 @@
 - (void)setUp
 {
     [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+	
+	TestObject *t1 = [TestObject new];
+	TestObject *t2 = [TestObject new];
+	TestObject *t3 = [TestObject new];
+	
+	t1.content = @(1);
+	t2.content = @(2);
+	t3.content = @(3);
+	
+	self.array = @[t1, t2, t3];
 }
 
-- (void)tearDown
+- (void)testSelect
 {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
-
-- (void)testExample
-{
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+	NSEnumerator *enumerator = self.array.select(^(TestObject *o) { return o.content; });
+	XCTAssertEqualObjects(@(1), [enumerator nextObject], @"");
+	XCTAssertEqualObjects(@(2), [enumerator nextObject], @"");
+	XCTAssertEqualObjects(@(3), [enumerator nextObject], @"");
 }
 
 @end

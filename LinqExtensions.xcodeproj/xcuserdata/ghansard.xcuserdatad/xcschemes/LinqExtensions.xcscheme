@@ -28,6 +28,16 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "1D889B45190FF93C00D6B5F3"
+               BuildableName = "LinqExtensions Tests.xctest"
+               BlueprintName = "LinqExtensions Tests"
+               ReferencedContainer = "container:LinqExtensions.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
