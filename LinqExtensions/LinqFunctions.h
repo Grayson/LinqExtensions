@@ -1,10 +1,9 @@
-#import "LinqEnumerator.h"
 
 typedef id (^LinqBlock)(id o);
 typedef int (^LinqBlockReturningBool)(id o);
 
-typedef LinqEnumerator *(^LinqSelectBlock)(LinqBlock block);
-typedef LinqEnumerator *(^LinqWhereBlock)(LinqBlockReturningBool block);
+typedef NSEnumerator *(^LinqSelectBlock)(LinqBlock block);
+typedef NSEnumerator *(^LinqWhereBlock)(LinqBlockReturningBool block);
 typedef BOOL (^LinqAnyBlock)(LinqBlockReturningBool block);
 typedef BOOL (^LinqAllBlock)(LinqBlockReturningBool block);
 

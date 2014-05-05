@@ -1,3 +1,4 @@
+#import "LinqEnumerator.h"
 #import "LinqFunctions.h"
 
 LinqSelectBlock CreateLinqSelectBlock(NSEnumerator *enumerator)
@@ -20,7 +21,7 @@ LinqAnyBlock CreateLinqAnyBlock(NSEnumerator *enumerator)
 			if (block == nil)
 				return [enumerator nextObject] != nil;
 			LinqWhereBlock whereBlock = CreateLinqWhereBlock(enumerator);
-			LinqEnumerator *anyEnumerator = whereBlock(block);
+			NSEnumerator *anyEnumerator = whereBlock(block);
 			return [anyEnumerator nextObject] != nil;
 		} copy];
 }
