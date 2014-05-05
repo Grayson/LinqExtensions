@@ -15,6 +15,11 @@
 	return CreateLinqSelectBlock(self);
 }
 
+- (LinqSelectBlock)selectMany
+{
+	return CreateLinqSelectManyBlock(self);
+}
+
 - (LinqWhereBlock)where
 {
 	return CreateLinqWhereBlock(self);

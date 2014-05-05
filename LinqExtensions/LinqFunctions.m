@@ -1,9 +1,18 @@
 #import "LinqEnumerator.h"
 #import "LinqFunctions.h"
+#import "LinqManyEnumerator.h"
 
 LinqSelectBlock CreateLinqSelectBlock(NSEnumerator *enumerator)
 {
 	return [^(LinqBlock block) { return [LinqEnumerator enumeratorWithEnumerator:enumerator block:block]; } copy];
+}
+
+LinqSelectBlock CreateLinqSelectManyBlock(NSEnumerator *enumerator)
+{
+	return ^(LinqBlock block)
+	{
+		return [LinqManyEnumerator enumeratorWithEnumerator:CreateLinqSelectBlock(enumerator)(block)];
+	};
 }
 
 LinqWhereBlock CreateLinqWhereBlock(NSEnumerator *enumerator)

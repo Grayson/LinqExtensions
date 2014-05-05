@@ -11,6 +11,6 @@
 
 @interface NSEnumerator (Linq)
 
-#import "SharedLinqMethodDeclarations.include"
+#include "SharedLinqMethodDeclarations.include"
 
 @end

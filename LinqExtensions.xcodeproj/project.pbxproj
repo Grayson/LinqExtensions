@@ -28,6 +28,9 @@
 		1D889B641910D4DA00D6B5F3 /* WhereTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B631910D4DA00D6B5F3 /* WhereTests.m */; };
 		1D889B661910D4E200D6B5F3 /* AnyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B651910D4E200D6B5F3 /* AnyTests.m */; };
 		1D889B681910D4EB00D6B5F3 /* AllTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B671910D4EB00D6B5F3 /* AllTests.m */; };
+		1D889B6A1910D81C00D6B5F3 /* SelectManyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B691910D81C00D6B5F3 /* SelectManyTests.m */; };
+		1DC7855919175B88005256F7 /* LinqManyEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7855819175B88005256F7 /* LinqManyEnumerator.m */; };
+		1DC7855A19175B88005256F7 /* LinqManyEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7855819175B88005256F7 /* LinqManyEnumerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		1D889B631910D4DA00D6B5F3 /* WhereTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhereTests.m; sourceTree = "<group>"; };
 		1D889B651910D4E200D6B5F3 /* AnyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnyTests.m; sourceTree = "<group>"; };
 		1D889B671910D4EB00D6B5F3 /* AllTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllTests.m; sourceTree = "<group>"; };
+		1D889B691910D81C00D6B5F3 /* SelectManyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectManyTests.m; sourceTree = "<group>"; };
+		1DC7855719175B88005256F7 /* LinqManyEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinqManyEnumerator.h; sourceTree = "<group>"; };
+		1DC7855819175B88005256F7 /* LinqManyEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinqManyEnumerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +146,8 @@
 				1D889B37190FE60700D6B5F3 /* TestObject.m */,
 				1D889B39190FE62600D6B5F3 /* LinqEnumerator.h */,
 				1D889B3A190FE62600D6B5F3 /* LinqEnumerator.m */,
+				1DC7855719175B88005256F7 /* LinqManyEnumerator.h */,
+				1DC7855819175B88005256F7 /* LinqManyEnumerator.m */,
 				1D889B3E190FE77000D6B5F3 /* LinqFunctions.h */,
 				1D889B3C190FE76000D6B5F3 /* LinqFunctions.m */,
 				1D889B3F190FE7B700D6B5F3 /* NSArray+Linq.h */,
@@ -168,6 +176,7 @@
 				1D889B631910D4DA00D6B5F3 /* WhereTests.m */,
 				1D889B651910D4E200D6B5F3 /* AnyTests.m */,
 				1D889B671910D4EB00D6B5F3 /* AllTests.m */,
+				1D889B691910D81C00D6B5F3 /* SelectManyTests.m */,
 			);
 			path = "LinqExtensions Tests";
 			sourceTree = "<group>";
@@ -273,6 +282,7 @@
 				1D889B41190FE7B700D6B5F3 /* NSArray+Linq.m in Sources */,
 				1D889B3D190FE76000D6B5F3 /* LinqFunctions.m in Sources */,
 				1D889B38190FE60700D6B5F3 /* TestObject.m in Sources */,
+				1DC7855919175B88005256F7 /* LinqManyEnumerator.m in Sources */,
 				1D889B5F190FFB7E00D6B5F3 /* NSEnumerator+Linq.m in Sources */,
 				1D889B2C190FE5F200D6B5F3 /* main.m in Sources */,
 			);
@@ -288,7 +298,9 @@
 				1D889B681910D4EB00D6B5F3 /* AllTests.m in Sources */,
 				1D889B5B190FFA7700D6B5F3 /* LinqFunctions.m in Sources */,
 				1D889B59190FFA6F00D6B5F3 /* NSArray+Linq.m in Sources */,
+				1DC7855A19175B88005256F7 /* LinqManyEnumerator.m in Sources */,
 				1D889B5C190FFA7A00D6B5F3 /* LinqEnumerator.m in Sources */,
+				1D889B6A1910D81C00D6B5F3 /* SelectManyTests.m in Sources */,
 				1D889B641910D4DA00D6B5F3 /* WhereTests.m in Sources */,
 				1D889B5A190FFA7200D6B5F3 /* TestObject.m in Sources */,
 				1D889B58190FF95A00D6B5F3 /* SelectTests.m in Sources */,
@@ -458,6 +470,7 @@
 				1D889B35190FE5F200D6B5F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D889B54190FF93C00D6B5F3 /* Build configuration list for PBXNativeTarget "LinqExtensions Tests" */ = {
 			isa = XCConfigurationList;
@@ -466,6 +479,7 @@
 				1D889B56190FF93C00D6B5F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

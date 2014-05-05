@@ -11,9 +11,6 @@
 
 @interface NSArray (Linq)
 
-- (LinqSelectBlock)select;
-- (LinqWhereBlock)where;
-- (LinqAnyBlock)any;
-- (LinqAllBlock)all;
+#include "SharedLinqMethodDeclarations.include"
 
 @end

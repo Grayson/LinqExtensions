@@ -30,4 +30,9 @@
 	return CreateLinqAllBlock([self objectEnumerator]);
 }
 
+- (LinqSelectBlock)selectMany
+{
+	return CreateLinqSelectManyBlock([self objectEnumerator]);
+}
+
 @end

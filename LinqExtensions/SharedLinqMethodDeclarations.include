@@ -1,4 +1,5 @@
 - (LinqSelectBlock)select;
+- (LinqSelectBlock)selectMany;
 - (LinqWhereBlock)where;
 - (LinqAnyBlock)any;
 - (LinqAllBlock)all;
