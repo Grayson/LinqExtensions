@@ -37,6 +37,8 @@
 		1DC78562191769D0005256F7 /* LinqExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC78560191769D0005256F7 /* LinqExceptions.m */; };
 		1DC7856419188EE9005256F7 /* LastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7856319188EE9005256F7 /* LastTests.m */; };
 		1DC7856619188EF6005256F7 /* LastOrNilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7856519188EF6005256F7 /* LastOrNilTests.m */; };
+		1DC7856819189450005256F7 /* SkipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7856719189450005256F7 /* SkipTests.m */; };
+		1DC7856A19189536005256F7 /* SkipWhileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7856919189536005256F7 /* SkipWhileTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +100,8 @@
 		1DC78560191769D0005256F7 /* LinqExceptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinqExceptions.m; sourceTree = "<group>"; };
 		1DC7856319188EE9005256F7 /* LastTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastTests.m; sourceTree = "<group>"; };
 		1DC7856519188EF6005256F7 /* LastOrNilTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastOrNilTests.m; sourceTree = "<group>"; };
+		1DC7856719189450005256F7 /* SkipTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkipTests.m; sourceTree = "<group>"; };
+		1DC7856919189536005256F7 /* SkipWhileTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SkipWhileTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +199,8 @@
 				1DC7855D19176548005256F7 /* FirstOrNilTests.m */,
 				1DC7856319188EE9005256F7 /* LastTests.m */,
 				1DC7856519188EF6005256F7 /* LastOrNilTests.m */,
+				1DC7856719189450005256F7 /* SkipTests.m */,
+				1DC7856919189536005256F7 /* SkipWhileTests.m */,
 			);
 			path = "LinqExtensions Tests";
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DC7856819189450005256F7 /* SkipTests.m in Sources */,
 				1D889B60190FFB7E00D6B5F3 /* NSEnumerator+Linq.m in Sources */,
 				1DC7855E19176548005256F7 /* FirstOrNilTests.m in Sources */,
 				1D889B661910D4E200D6B5F3 /* AnyTests.m in Sources */,
@@ -324,6 +331,7 @@
 				1D889B5C190FFA7A00D6B5F3 /* LinqEnumerator.m in Sources */,
 				1D889B6A1910D81C00D6B5F3 /* SelectManyTests.m in Sources */,
 				1D889B641910D4DA00D6B5F3 /* WhereTests.m in Sources */,
+				1DC7856A19189536005256F7 /* SkipWhileTests.m in Sources */,
 				1DC7856619188EF6005256F7 /* LastOrNilTests.m in Sources */,
 				1DC7856419188EE9005256F7 /* LastTests.m in Sources */,
 				1D889B5A190FFA7200D6B5F3 /* TestObject.m in Sources */,

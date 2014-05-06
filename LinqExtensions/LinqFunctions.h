@@ -5,6 +5,7 @@ typedef NSEnumerator *(^LinqSelectBlock)(LinqBlock block);
 typedef NSEnumerator *(^LinqWhereBlock)(LinqBlockReturningBool block);
 typedef BOOL (^LinqAnyBlock)(LinqBlockReturningBool block);
 typedef BOOL (^LinqAllBlock)(LinqBlockReturningBool block);
+typedef NSEnumerator *(^LinqSkipBlock)(NSUInteger skip);
 
 typedef NS_OPTIONS(NSUInteger, LinqBlockOptions) {
 	ThrowsExceptionWhenSequenceIsEmpty = 0x01,
@@ -17,3 +18,5 @@ LinqAnyBlock CreateLinqAnyBlock(NSEnumerator *enumerator);
 LinqAllBlock CreateLinqAllBlock(NSEnumerator *enumerator);
 LinqWhereBlock CreateLinqFirstBlock(NSEnumerator *enumerator, LinqBlockOptions options);
 LinqWhereBlock CreateLinqLastBlock(NSEnumerator *enumerator, LinqBlockOptions options);
+LinqSkipBlock CreateLinqSkipBlock(NSEnumerator *enumerator);
+LinqWhereBlock CreateLinqSkipWhileBlock(NSEnumerator *enumerator);

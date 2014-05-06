@@ -55,4 +55,14 @@
 	return CreateLinqLastBlock(self, 0);
 }
 
+- (LinqSkipBlock)skip
+{
+	return CreateLinqSkipBlock(self);
+}
+
+- (LinqWhereBlock)skipWhile
+{
+	return CreateLinqSkipWhileBlock(self);
+}
+
 @end

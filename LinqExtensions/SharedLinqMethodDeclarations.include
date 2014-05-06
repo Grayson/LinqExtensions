@@ -9,3 +9,5 @@
 - (LinqBlock)last;
 - (LinqBlock)lastOrNil;
 
+- (LinqSkipBlock)skip;
+- (LinqWhereBlock)skipWhile;

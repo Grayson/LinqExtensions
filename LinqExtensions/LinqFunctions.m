@@ -76,3 +76,22 @@ LinqWhereBlock CreateLinqLastBlock(NSEnumerator *enumerator, LinqBlockOptions op
 		return currentObject;
 	};
 }
+
+LinqSkipBlock CreateLinqSkipBlock(NSEnumerator *enumerator)
+{
+	return ^(NSUInteger skip) {
+		for (NSUInteger skipCount = 0; skipCount < skip; skipCount++)
+			(void)[enumerator nextObject];
+		return enumerator;
+	};
+}
+
+LinqWhereBlock CreateLinqSkipWhileBlock(NSEnumerator *enumerator)
+{
+	return ^(LinqBlockReturningBool block) {
+		id nextObject = [enumerator nextObject];
+		while (nextObject != nil && !!block(nextObject))
+			nextObject = [enumerator nextObject];
+		return enumerator;
+	};
+}

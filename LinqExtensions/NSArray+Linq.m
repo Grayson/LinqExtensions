@@ -55,4 +55,14 @@
 	return CreateLinqLastBlock([self objectEnumerator], 0);
 }
 
+- (LinqSkipBlock)skip
+{
+	return CreateLinqSkipBlock([self objectEnumerator]);
+}
+
+- (LinqWhereBlock)skipWhile
+{
+	return CreateLinqSkipWhileBlock([self objectEnumerator]);
+}
+
 @end
