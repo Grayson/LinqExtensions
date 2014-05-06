@@ -35,4 +35,14 @@
 	return CreateLinqSelectManyBlock([self objectEnumerator]);
 }
 
+- (LinqBlock)first
+{
+	return CreateLinqFirstBlock([self objectEnumerator], ThrowsExceptionWhenSequenceIsEmpty);
+}
+
+- (LinqBlock)firstOrNil
+{
+	return CreateLinqFirstBlock([self objectEnumerator], 0);
+}
+
 @end

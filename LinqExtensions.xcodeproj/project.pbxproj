@@ -31,6 +31,10 @@
 		1D889B6A1910D81C00D6B5F3 /* SelectManyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B691910D81C00D6B5F3 /* SelectManyTests.m */; };
 		1DC7855919175B88005256F7 /* LinqManyEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7855819175B88005256F7 /* LinqManyEnumerator.m */; };
 		1DC7855A19175B88005256F7 /* LinqManyEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7855819175B88005256F7 /* LinqManyEnumerator.m */; };
+		1DC7855C19176362005256F7 /* FirstTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7855B19176362005256F7 /* FirstTests.m */; };
+		1DC7855E19176548005256F7 /* FirstOrNilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7855D19176548005256F7 /* FirstOrNilTests.m */; };
+		1DC78561191769D0005256F7 /* LinqExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC78560191769D0005256F7 /* LinqExceptions.m */; };
+		1DC78562191769D0005256F7 /* LinqExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC78560191769D0005256F7 /* LinqExceptions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +90,10 @@
 		1D889B691910D81C00D6B5F3 /* SelectManyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectManyTests.m; sourceTree = "<group>"; };
 		1DC7855719175B88005256F7 /* LinqManyEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinqManyEnumerator.h; sourceTree = "<group>"; };
 		1DC7855819175B88005256F7 /* LinqManyEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinqManyEnumerator.m; sourceTree = "<group>"; };
+		1DC7855B19176362005256F7 /* FirstTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstTests.m; sourceTree = "<group>"; };
+		1DC7855D19176548005256F7 /* FirstOrNilTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstOrNilTests.m; sourceTree = "<group>"; };
+		1DC7855F191769D0005256F7 /* LinqExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinqExceptions.h; sourceTree = "<group>"; };
+		1DC78560191769D0005256F7 /* LinqExceptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinqExceptions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +163,8 @@
 				1D889B5D190FFB7E00D6B5F3 /* NSEnumerator+Linq.h */,
 				1D889B5E190FFB7E00D6B5F3 /* NSEnumerator+Linq.m */,
 				1D889B61190FFBCF00D6B5F3 /* SharedLinqMethodDeclarations.include */,
+				1DC7855F191769D0005256F7 /* LinqExceptions.h */,
+				1DC78560191769D0005256F7 /* LinqExceptions.m */,
 			);
 			path = LinqExtensions;
 			sourceTree = "<group>";
@@ -177,6 +187,8 @@
 				1D889B651910D4E200D6B5F3 /* AnyTests.m */,
 				1D889B671910D4EB00D6B5F3 /* AllTests.m */,
 				1D889B691910D81C00D6B5F3 /* SelectManyTests.m */,
+				1DC7855B19176362005256F7 /* FirstTests.m */,
+				1DC7855D19176548005256F7 /* FirstOrNilTests.m */,
 			);
 			path = "LinqExtensions Tests";
 			sourceTree = "<group>";
@@ -279,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D889B3B190FE62600D6B5F3 /* LinqEnumerator.m in Sources */,
+				1DC78561191769D0005256F7 /* LinqExceptions.m in Sources */,
 				1D889B41190FE7B700D6B5F3 /* NSArray+Linq.m in Sources */,
 				1D889B3D190FE76000D6B5F3 /* LinqFunctions.m in Sources */,
 				1D889B38190FE60700D6B5F3 /* TestObject.m in Sources */,
@@ -293,9 +306,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D889B60190FFB7E00D6B5F3 /* NSEnumerator+Linq.m in Sources */,
+				1DC7855E19176548005256F7 /* FirstOrNilTests.m in Sources */,
 				1D889B661910D4E200D6B5F3 /* AnyTests.m in Sources */,
 				1D889B50190FF93C00D6B5F3 /* LinqExtensions_Tests.m in Sources */,
 				1D889B681910D4EB00D6B5F3 /* AllTests.m in Sources */,
+				1DC7855C19176362005256F7 /* FirstTests.m in Sources */,
+				1DC78562191769D0005256F7 /* LinqExceptions.m in Sources */,
 				1D889B5B190FFA7700D6B5F3 /* LinqFunctions.m in Sources */,
 				1D889B59190FFA6F00D6B5F3 /* NSArray+Linq.m in Sources */,
 				1DC7855A19175B88005256F7 /* LinqManyEnumerator.m in Sources */,

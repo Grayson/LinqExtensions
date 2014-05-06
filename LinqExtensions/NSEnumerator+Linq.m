@@ -35,4 +35,14 @@
 	return CreateLinqAllBlock(self);
 }
 
+- (LinqBlock)first
+{
+	return CreateLinqFirstBlock(self, ThrowsExceptionWhenSequenceIsEmpty);
+}
+
+- (LinqBlock)firstOrNil
+{
+	return CreateLinqFirstBlock(self, 0);
+}
+
 @end

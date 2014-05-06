@@ -3,3 +3,7 @@
 - (LinqWhereBlock)where;
 - (LinqAnyBlock)any;
 - (LinqAllBlock)all;
+
+- (LinqBlock)first;
+- (LinqBlock)firstOrNil;
+

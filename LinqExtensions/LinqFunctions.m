@@ -1,4 +1,5 @@
 #import "LinqEnumerator.h"
+#import "LinqExceptions.h"
 #import "LinqFunctions.h"
 #import "LinqManyEnumerator.h"
 
@@ -46,4 +47,14 @@ LinqAllBlock CreateLinqAllBlock(NSEnumerator *enumerator)
 			}
 			return YES;
 		} copy];
+}
+
+LinqWhereBlock CreateLinqFirstBlock(NSEnumerator *enumerator, LinqBlockOptions options)
+{
+	return ^(LinqBlockReturningBool block) {
+		id nextObject = block == nil ? [enumerator nextObject] : [CreateLinqWhereBlock(enumerator)(block) nextObject];
+		if (nextObject == nil && ( (options & ThrowsExceptionWhenSequenceIsEmpty) == ThrowsExceptionWhenSequenceIsEmpty) )
+			@throw [NSException exceptionWithName:InvalidOperationExceptionName reason:@"Sequence contains no elements" userInfo:nil];
+		return nextObject;
+	};
 }
