@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D889B29190FE5F200D6B5F3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D889B28190FE5F200D6B5F3 /* Foundation.framework */; };
-		1D889B2C190FE5F200D6B5F3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B2B190FE5F200D6B5F3 /* main.m */; };
 		1D889B30190FE5F200D6B5F3 /* LinqExtensions.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1D889B2F190FE5F200D6B5F3 /* LinqExtensions.1 */; };
-		1D889B38190FE60700D6B5F3 /* TestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B37190FE60700D6B5F3 /* TestObject.m */; };
 		1D889B3B190FE62600D6B5F3 /* LinqEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B3A190FE62600D6B5F3 /* LinqEnumerator.m */; };
 		1D889B3D190FE76000D6B5F3 /* LinqFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B3C190FE76000D6B5F3 /* LinqFunctions.m */; };
 		1D889B41190FE7B700D6B5F3 /* NSArray+Linq.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B40190FE7B700D6B5F3 /* NSArray+Linq.m */; };
@@ -39,6 +37,7 @@
 		1DC7856619188EF6005256F7 /* LastOrNilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7856519188EF6005256F7 /* LastOrNilTests.m */; };
 		1DC7856819189450005256F7 /* SkipTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7856719189450005256F7 /* SkipTests.m */; };
 		1DC7856A19189536005256F7 /* SkipWhileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7856919189536005256F7 /* SkipWhileTests.m */; };
+		1DC7856B19189812005256F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D889B2B190FE5F200D6B5F3 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +69,8 @@
 		1D889B2B190FE5F200D6B5F3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1D889B2E190FE5F200D6B5F3 /* LinqExtensions-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LinqExtensions-Prefix.pch"; sourceTree = "<group>"; };
 		1D889B2F190FE5F200D6B5F3 /* LinqExtensions.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = LinqExtensions.1; sourceTree = "<group>"; };
-		1D889B36190FE60700D6B5F3 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestObject.h; sourceTree = "<group>"; };
-		1D889B37190FE60700D6B5F3 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestObject.m; sourceTree = "<group>"; };
+		1D889B36190FE60700D6B5F3 /* TestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestObject.h; path = ../LinqExtensions/TestObject.h; sourceTree = "<group>"; };
+		1D889B37190FE60700D6B5F3 /* TestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TestObject.m; path = ../LinqExtensions/TestObject.m; sourceTree = "<group>"; };
 		1D889B39190FE62600D6B5F3 /* LinqEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinqEnumerator.h; sourceTree = "<group>"; };
 		1D889B3A190FE62600D6B5F3 /* LinqEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinqEnumerator.m; sourceTree = "<group>"; };
 		1D889B3C190FE76000D6B5F3 /* LinqFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinqFunctions.m; sourceTree = "<group>"; };
@@ -158,8 +157,7 @@
 				1D889B2B190FE5F200D6B5F3 /* main.m */,
 				1D889B2F190FE5F200D6B5F3 /* LinqExtensions.1 */,
 				1D889B2D190FE5F200D6B5F3 /* Supporting Files */,
-				1D889B36190FE60700D6B5F3 /* TestObject.h */,
-				1D889B37190FE60700D6B5F3 /* TestObject.m */,
+				1D889B61190FFBCF00D6B5F3 /* SharedLinqMethodDeclarations.include */,
 				1D889B39190FE62600D6B5F3 /* LinqEnumerator.h */,
 				1D889B3A190FE62600D6B5F3 /* LinqEnumerator.m */,
 				1DC7855719175B88005256F7 /* LinqManyEnumerator.h */,
@@ -170,7 +168,6 @@
 				1D889B40190FE7B700D6B5F3 /* NSArray+Linq.m */,
 				1D889B5D190FFB7E00D6B5F3 /* NSEnumerator+Linq.h */,
 				1D889B5E190FFB7E00D6B5F3 /* NSEnumerator+Linq.m */,
-				1D889B61190FFBCF00D6B5F3 /* SharedLinqMethodDeclarations.include */,
 				1DC7855F191769D0005256F7 /* LinqExceptions.h */,
 				1DC78560191769D0005256F7 /* LinqExceptions.m */,
 			);
@@ -189,6 +186,8 @@
 			isa = PBXGroup;
 			children = (
 				1D889B4F190FF93C00D6B5F3 /* LinqExtensions_Tests.m */,
+				1D889B36190FE60700D6B5F3 /* TestObject.h */,
+				1D889B37190FE60700D6B5F3 /* TestObject.m */,
 				1D889B4A190FF93C00D6B5F3 /* Supporting Files */,
 				1D889B57190FF95A00D6B5F3 /* SelectTests.m */,
 				1D889B631910D4DA00D6B5F3 /* WhereTests.m */,
@@ -306,10 +305,8 @@
 				1DC78561191769D0005256F7 /* LinqExceptions.m in Sources */,
 				1D889B41190FE7B700D6B5F3 /* NSArray+Linq.m in Sources */,
 				1D889B3D190FE76000D6B5F3 /* LinqFunctions.m in Sources */,
-				1D889B38190FE60700D6B5F3 /* TestObject.m in Sources */,
 				1DC7855919175B88005256F7 /* LinqManyEnumerator.m in Sources */,
 				1D889B5F190FFB7E00D6B5F3 /* NSEnumerator+Linq.m in Sources */,
-				1D889B2C190FE5F200D6B5F3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +324,7 @@
 				1DC78562191769D0005256F7 /* LinqExceptions.m in Sources */,
 				1D889B5B190FFA7700D6B5F3 /* LinqFunctions.m in Sources */,
 				1D889B59190FFA6F00D6B5F3 /* NSArray+Linq.m in Sources */,
+				1DC7856B19189812005256F7 /* main.m in Sources */,
 				1DC7855A19175B88005256F7 /* LinqManyEnumerator.m in Sources */,
 				1D889B5C190FFA7A00D6B5F3 /* LinqEnumerator.m in Sources */,
 				1D889B6A1910D81C00D6B5F3 /* SelectManyTests.m in Sources */,
