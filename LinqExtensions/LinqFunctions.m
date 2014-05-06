@@ -58,3 +58,21 @@ LinqWhereBlock CreateLinqFirstBlock(NSEnumerator *enumerator, LinqBlockOptions o
 		return nextObject;
 	};
 }
+
+LinqWhereBlock CreateLinqLastBlock(NSEnumerator *enumerator, LinqBlockOptions options)
+{
+	return ^(LinqBlockReturningBool block) {
+		NSEnumerator *innerEnumerator = block == nil ? enumerator : CreateLinqWhereBlock(enumerator)(block);
+		id nextObject = [innerEnumerator nextObject];
+		id currentObject = nil;
+		while (true) {
+			if (nextObject == nil)
+				break;
+			currentObject = nextObject;
+			nextObject = [innerEnumerator nextObject];
+		};
+		if (currentObject == nil && nextObject == nil && ( (options & ThrowsExceptionWhenSequenceIsEmpty) == ThrowsExceptionWhenSequenceIsEmpty) )
+			@throw [NSException exceptionWithName:InvalidOperationExceptionName reason:@"Sequence contains no elements" userInfo:nil];
+		return currentObject;
+	};
+}

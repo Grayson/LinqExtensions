@@ -35,6 +35,8 @@
 		1DC7855E19176548005256F7 /* FirstOrNilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7855D19176548005256F7 /* FirstOrNilTests.m */; };
 		1DC78561191769D0005256F7 /* LinqExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC78560191769D0005256F7 /* LinqExceptions.m */; };
 		1DC78562191769D0005256F7 /* LinqExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC78560191769D0005256F7 /* LinqExceptions.m */; };
+		1DC7856419188EE9005256F7 /* LastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7856319188EE9005256F7 /* LastTests.m */; };
+		1DC7856619188EF6005256F7 /* LastOrNilTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DC7856519188EF6005256F7 /* LastOrNilTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		1DC7855D19176548005256F7 /* FirstOrNilTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstOrNilTests.m; sourceTree = "<group>"; };
 		1DC7855F191769D0005256F7 /* LinqExceptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinqExceptions.h; sourceTree = "<group>"; };
 		1DC78560191769D0005256F7 /* LinqExceptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinqExceptions.m; sourceTree = "<group>"; };
+		1DC7856319188EE9005256F7 /* LastTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastTests.m; sourceTree = "<group>"; };
+		1DC7856519188EF6005256F7 /* LastOrNilTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LastOrNilTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +193,8 @@
 				1D889B691910D81C00D6B5F3 /* SelectManyTests.m */,
 				1DC7855B19176362005256F7 /* FirstTests.m */,
 				1DC7855D19176548005256F7 /* FirstOrNilTests.m */,
+				1DC7856319188EE9005256F7 /* LastTests.m */,
+				1DC7856519188EF6005256F7 /* LastOrNilTests.m */,
 			);
 			path = "LinqExtensions Tests";
 			sourceTree = "<group>";
@@ -318,6 +324,8 @@
 				1D889B5C190FFA7A00D6B5F3 /* LinqEnumerator.m in Sources */,
 				1D889B6A1910D81C00D6B5F3 /* SelectManyTests.m in Sources */,
 				1D889B641910D4DA00D6B5F3 /* WhereTests.m in Sources */,
+				1DC7856619188EF6005256F7 /* LastOrNilTests.m in Sources */,
+				1DC7856419188EE9005256F7 /* LastTests.m in Sources */,
 				1D889B5A190FFA7200D6B5F3 /* TestObject.m in Sources */,
 				1D889B58190FF95A00D6B5F3 /* SelectTests.m in Sources */,
 			);

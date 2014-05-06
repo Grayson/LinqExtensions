@@ -6,4 +6,6 @@
 
 - (LinqBlock)first;
 - (LinqBlock)firstOrNil;
+- (LinqBlock)last;
+- (LinqBlock)lastOrNil;
 

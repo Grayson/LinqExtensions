@@ -45,4 +45,14 @@
 	return CreateLinqFirstBlock(self, 0);
 }
 
+- (LinqBlock)last
+{
+	return CreateLinqLastBlock(self, ThrowsExceptionWhenSequenceIsEmpty);
+}
+
+- (LinqBlock)lastOrNil
+{
+	return CreateLinqLastBlock(self, 0);
+}
+
 @end

@@ -16,3 +16,4 @@ LinqWhereBlock CreateLinqWhereBlock(NSEnumerator *enumerator);
 LinqAnyBlock CreateLinqAnyBlock(NSEnumerator *enumerator);
 LinqAllBlock CreateLinqAllBlock(NSEnumerator *enumerator);
 LinqWhereBlock CreateLinqFirstBlock(NSEnumerator *enumerator, LinqBlockOptions options);
+LinqWhereBlock CreateLinqLastBlock(NSEnumerator *enumerator, LinqBlockOptions options);
